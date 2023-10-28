@@ -17,7 +17,7 @@ namespace PlatformService.Data
 
         public void CreatePlatform(Platform plat)
         {
-            if(plat != null)
+            if(plat == null)
             {
                 throw new ArgumentNullException(nameof(plat));
             }
