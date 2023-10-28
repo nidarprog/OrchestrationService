@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using PlatformService.Models;
+using Microsoft.AspNetCore.Builder;
 
 namespace PlatformService.Data
 {
@@ -29,7 +30,8 @@ namespace PlatformService.Data
                     
                 );
                 context.SaveChanges();
-            }else
+            }
+            else
             {
                 Console.WriteLine("--> already have data");
             }
