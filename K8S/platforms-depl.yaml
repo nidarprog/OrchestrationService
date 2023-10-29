@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: platforms-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: platforservice
+  template:
+    metadata:
+      labels:
+        app: platforservice
+    spec:
+      containers:
+      - name: platforservice
+        image: ahmed4455/platformservice/latest # better to use image tag
