@@ -6,12 +6,12 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: platforservice
+      app: platformservice
   template:
     metadata:
       labels:
-        app: platforservice
+        app: platformservice
     spec:
       containers:
-      - name: platforservice
-        image: ahmed4455/platformservice/latest # better to use image tag
+        - name: platformservice
+          image: ahmed4455/platformservice/latest # better to use image tag
