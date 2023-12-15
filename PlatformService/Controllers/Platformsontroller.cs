@@ -12,7 +12,7 @@ using PlatformService.Models;
 
 namespace PlatformService.Controllers
 {
-    [Route("/api/[controller]")]
+    [Route("/api/c/[controller]")]
     [ApiController]
     public class Platformsontroller : ControllerBase
     {
